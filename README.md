@@ -10,7 +10,7 @@ Example of tapping into all of the logging data your application provides
 
 The LogType shows information which identify what log message has been written. For any given message type these values should not be variable. They are often used by log storage and alert generating systems to group, filter, and categorize messages.
 
-The combination of `CategoryName` + `EventId {Id, Name}` should be sufficiently unique to itentify a log type.
+The combination of `CategoryName` + `EventId {Id, Name}` should be sufficiently unique to identify a log type.
 
 If the `EventId` is `{0, NullOrEmpty}` then the `CategoryName` + `OriginalFormat` should be sufficient to 
 identify a log type.
