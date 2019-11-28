@@ -9,12 +9,13 @@ namespace WheresLou.Logging.Watcher
     {
         private readonly WatchingLoggerProvider _provider;
 
-        public WatchingLoggerScope(WatchingLoggerProvider provider, WatchingLoggerScope parent, ImmutableDictionary<string, object> properties, ImmutableList<string> levels)
+        public WatchingLoggerScope(WatchingLoggerProvider provider, WatchingLoggerScope parent, ImmutableDictionary<string, object> properties, ImmutableList<string> levels, string originalFormat)
         {
             _provider = provider;
             Parent = parent;
             Properties = properties;
             Levels = levels;
+            OriginalFormat = originalFormat;
         }
 
         public WatchingLoggerScope Parent { get; }
@@ -22,6 +23,8 @@ namespace WheresLou.Logging.Watcher
         public ImmutableDictionary<string, object> Properties { get; }
 
         public ImmutableList<string> Levels { get; }
+
+        public string OriginalFormat { get; }
 
         public void Dispose()
         {
@@ -32,17 +35,26 @@ namespace WheresLou.Logging.Watcher
         {
             var properties = parent?.Properties ?? ImmutableDictionary<string, object>.Empty;
             var levels = parent?.Levels ?? ImmutableList<string>.Empty;
+            string originalFormat = default;
 
             if (state is IReadOnlyList<KeyValuePair<string, object>> list)
             {
                 for (var index = 0; index < list.Count; index++)
                 {
-                    properties = properties.Add(list[index].Key, list[index].Value);
+                    var property = list[index];
+                    if (string.Equals(property.Key, "{OriginalFormat}", StringComparison.Ordinal))
+                    {
+                        originalFormat = property.Value?.ToString();
+                    }
+                    else
+                    {
+                        properties = properties.Add(list[index].Key, list[index].Value);
+                    }
                 }
             }
             levels = levels.Add(state.ToString());
 
-            return new WatchingLoggerScope(provider, parent, properties, levels);
+            return new WatchingLoggerScope(provider, parent, properties, levels, originalFormat);
         }
     }
 }
