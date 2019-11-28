@@ -1,0 +1,4582 @@
+- LogType:
+    CategoryName: Microsoft.Extensions.Hosting.Internal.Host
+    LogLevel: Debug
+    EventId:
+      Id: 1
+    OriginalFormat: Hosting starting
+  Log:
+    Message: Hosting starting
+    Properties: {}
+- LogType:
+    CategoryName: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+    LogLevel: Information
+    EventId:
+      Id: 0
+    OriginalFormat: User profile is available. Using '{FullName}' as key repository and Windows DPAPI to encrypt keys at rest.
+  Log:
+    Message: User profile is available. Using 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+    Properties:
+      FullName: C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys
+- LogType:
+    CategoryName: Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository
+    LogLevel: Debug
+    EventId:
+      Id: 37
+    OriginalFormat: Reading data from file '{FullPath}'.
+  Log:
+    Message: Reading data from file 'C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys\key-3db7d888-76cb-47f0-85bd-84d9d60e5f5a.xml'.
+    Properties:
+      FullPath: C:\Users\Administrator\AppData\Local\ASP.NET\DataProtection-Keys\key-3db7d888-76cb-47f0-85bd-84d9d60e5f5a.xml
+- LogType:
+    CategoryName: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager
+    LogLevel: Debug
+    EventId:
+      Id: 18
+    OriginalFormat: Found key {KeyId:B}.
+  Log:
+    Message: Found key {3db7d888-76cb-47f0-85bd-84d9d60e5f5a}.
+    Properties:
+      KeyId: 3db7d888-76cb-47f0-85bd-84d9d60e5f5a
+- LogType:
+    CategoryName: Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver
+    LogLevel: Debug
+    EventId:
+      Id: 13
+    OriginalFormat: Considering key {KeyId:B} with expiration date {ExpirationDate:u} as default key.
+  Log:
+    Message: Considering key {3db7d888-76cb-47f0-85bd-84d9d60e5f5a} with expiration date 2019-12-23 18:53:42Z as default key.
+    Properties:
+      KeyId: 3db7d888-76cb-47f0-85bd-84d9d60e5f5a
+      ExpirationDate:
+        DateTime: 2019-12-23T18:53:42.8672792
+        UtcDateTime: 2019-12-23T18:53:42.8672792Z
+        LocalDateTime: 2019-12-23T10:53:42.8672792-08:00
+        Date: 2019-12-23T00:00:00.0000000
+        Day: 23
+        DayOfWeek: Monday
+        DayOfYear: 357
+        Hour: 18
+        Millisecond: 867
+        Minute: 53
+        Month: 12
+        Offset: 00:00:00
+        Second: 42
+        Ticks: 637127240228672792
+        UtcTicks: 637127240228672792
+        TimeOfDay: 18:53:42.8672792
+        Year: 2019
+- LogType:
+    CategoryName: Microsoft.AspNetCore.DataProtection.TypeForwardingActivator
+    LogLevel: Debug
+    EventId:
+      Id: 0
+    OriginalFormat: Forwarded activator type request from {FromType} to {ToType}
+  Log:
+    Message: Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+    Properties:
+      FromType: Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60
+      ToType: Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+- LogType:
+    CategoryName: Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor
+    LogLevel: Debug
+    EventId:
+      Id: 51
+    OriginalFormat: Decrypting secret element using Windows DPAPI.
+  Log:
+    Message: Decrypting secret element using Windows DPAPI.
+    Properties: {}
+- LogType:
+    CategoryName: Microsoft.AspNetCore.DataProtection.TypeForwardingActivator
+    LogLevel: Debug
+    EventId:
+      Id: 0
+    OriginalFormat: Forwarded activator type request from {FromType} to {ToType}
+  Log:
+    Message: Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+    Properties:
+      FromType: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.2.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60
+      ToType: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+- LogType:
+    CategoryName: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory
+    LogLevel: Debug
+    EventId:
+      Id: 4
+    OriginalFormat: Opening CNG algorithm '{EncryptionAlgorithm}' from provider '{EncryptionAlgorithmProvider}' with chaining mode CBC.
+  Log:
+    Message: Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+    Properties:
+      EncryptionAlgorithm: AES
+      EncryptionAlgorithmProvider: 
+- LogType:
+    CategoryName: Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory
+    LogLevel: Debug
+    EventId:
+      Id: 3
+    OriginalFormat: Opening CNG algorithm '{HashAlgorithm}' from provider '{HashAlgorithmProvider}' with HMAC.
+  Log:
+    Message: Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+    Properties:
+      HashAlgorithm: SHA256
+      HashAlgorithmProvider: 
+- LogType:
+    CategoryName: Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider
+    LogLevel: Debug
+    EventId:
+      Id: 2
+    OriginalFormat: Using key {KeyId:B} as the default key.
+  Log:
+    Message: Using key {3db7d888-76cb-47f0-85bd-84d9d60e5f5a} as the default key.
+    Properties:
+      KeyId: 3db7d888-76cb-47f0-85bd-84d9d60e5f5a
+- LogType:
+    CategoryName: Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService
+    LogLevel: Debug
+    EventId:
+      Id: 0
+    OriginalFormat: Key ring with default key {KeyId:B} was loaded during application startup.
+  Log:
+    Message: Key ring with default key {3db7d888-76cb-47f0-85bd-84d9d60e5f5a} was loaded during application startup.
+    Properties:
+      KeyId: 3db7d888-76cb-47f0-85bd-84d9d60e5f5a
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer
+    LogLevel: Debug
+    EventId:
+      Id: 2
+      Name: FailedToLocateDevelopmentCertificateFile
+    OriginalFormat: Failed to locate the development https certificate at '{certificatePath}'.
+  Log:
+    Message: Failed to locate the development https certificate at '(null)'.
+    Properties:
+      certificatePath: 
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer
+    LogLevel: Debug
+    EventId:
+      Id: 0
+      Name: LocatedDevelopmentCertificate
+    OriginalFormat: 'Using development certificate: {certificateSubjectName} (Thumbprint: {certificateThumbprint})'
+  Log:
+    Message: 'Using development certificate: CN=localhost (Thumbprint: 552B82A856ABC48AFE67AD7575E2FA599AE47795)'
+    Properties:
+      certificateThumbprint: 552B82A856ABC48AFE67AD7575E2FA599AE47795
+      certificateSubjectName: CN=localhost
+- LogType:
+    CategoryName: Microsoft.Hosting.Lifetime
+    LogLevel: Information
+    EventId:
+      Id: 0
+    OriginalFormat: 'Now listening on: {address}'
+  Log:
+    Message: 'Now listening on: https://localhost:5001'
+    Properties:
+      address: https://localhost:5001
+- LogType:
+    CategoryName: Microsoft.Hosting.Lifetime
+    LogLevel: Information
+    EventId:
+      Id: 0
+    OriginalFormat: 'Now listening on: {address}'
+  Log:
+    Message: 'Now listening on: http://localhost:5000'
+    Properties:
+      address: http://localhost:5000
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Debug
+    EventId:
+      Id: 0
+    OriginalFormat: Loaded hosting startup assembly {assemblyName}
+  Log:
+    Message: Loaded hosting startup assembly ExampleWebApplication
+    Properties:
+      assemblyName: ExampleWebApplication
+- LogType:
+    CategoryName: Microsoft.Hosting.Lifetime
+    LogLevel: Information
+    EventId:
+      Id: 0
+    OriginalFormat: Application started. Press Ctrl+C to shut down.
+  Log:
+    Message: Application started. Press Ctrl+C to shut down.
+    Properties: {}
+- LogType:
+    CategoryName: Microsoft.Hosting.Lifetime
+    LogLevel: Information
+    EventId:
+      Id: 0
+    OriginalFormat: 'Hosting environment: {envName}'
+  Log:
+    Message: 'Hosting environment: Development'
+    Properties:
+      envName: Development
+- LogType:
+    CategoryName: Microsoft.Hosting.Lifetime
+    LogLevel: Information
+    EventId:
+      Id: 0
+    OriginalFormat: 'Content root path: {contentRoot}'
+  Log:
+    Message: 'Content root path: C:\Users\Administrator\projects\github.com\lodejard\watch-logging\src\ExampleWebApplication'
+    Properties:
+      contentRoot: C:\Users\Administrator\projects\github.com\lodejard\watch-logging\src\ExampleWebApplication
+- LogType:
+    CategoryName: Microsoft.Extensions.Hosting.Internal.Host
+    LogLevel: Debug
+    EventId:
+      Id: 2
+    OriginalFormat: Hosting started
+  Log:
+    Message: Hosting started
+    Properties: {}
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Debug
+    EventId:
+      Id: 39
+      Name: ConnectionAccepted
+    OriginalFormat: Connection id "{ConnectionId}" accepted.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRA" accepted.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRA
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Debug
+    EventId:
+      Id: 39
+      Name: ConnectionAccepted
+    OriginalFormat: Connection id "{ConnectionId}" accepted.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRB" accepted.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRB
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: ConnectionStart
+    OriginalFormat: Connection id "{ConnectionId}" started.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRA" started.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRA
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: ConnectionStart
+    OriginalFormat: Connection id "{ConnectionId}" started.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRB" started.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRB
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+    LogLevel: Debug
+    EventId:
+      Id: 6
+      Name: ConnectionReadFin
+    OriginalFormat: Connection id "{ConnectionId}" received FIN.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRB" received FIN.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRB
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+    LogLevel: Debug
+    EventId:
+      Id: 6
+      Name: ConnectionReadFin
+    OriginalFormat: Connection id "{ConnectionId}" received FIN.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRA" received FIN.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRA
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware
+    LogLevel: Debug
+    EventId:
+      Id: 1
+    OriginalFormat: Failed to authenticate HTTPS connection.
+  Log:
+    Message: Failed to authenticate HTTPS connection.
+    Properties: {}
+    Exception:
+    - Type: System.IO.IOException
+      Message: Authentication failed because the remote party has closed the transport stream.
+      Stack: >2-
+           at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+           at System.Net.Security.SslStream.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+           at System.Net.Security.SslStream.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+           at System.Net.Security.SslStream.ProcessAuthentication(LazyAsyncResult lazyResult, CancellationToken cancellationToken)
+           at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+           at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+           at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+           at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+           at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+           at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+           at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRB
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRB
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware
+    LogLevel: Debug
+    EventId:
+      Id: 1
+    OriginalFormat: Failed to authenticate HTTPS connection.
+  Log:
+    Message: Failed to authenticate HTTPS connection.
+    Properties: {}
+    Exception:
+    - Type: System.IO.IOException
+      Message: Authentication failed because the remote party has closed the transport stream.
+      Stack: >2-
+           at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+           at System.Net.Security.SslStream.StartReceiveBlob(Byte[] buffer, AsyncProtocolRequest asyncRequest)
+           at System.Net.Security.SslStream.ForceAuthentication(Boolean receiveFirst, Byte[] buffer, AsyncProtocolRequest asyncRequest)
+           at System.Net.Security.SslStream.ProcessAuthentication(LazyAsyncResult lazyResult, CancellationToken cancellationToken)
+           at System.Net.Security.SslStream.BeginAuthenticateAsServer(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken, AsyncCallback asyncCallback, Object asyncState)
+           at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_0(SslServerAuthenticationOptions arg1, CancellationToken arg2, AsyncCallback callback, Object state)
+           at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl[TArg1,TArg2](Func`5 beginMethod, Func`2 endFunction, Action`1 endAction, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+           at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state, TaskCreationOptions creationOptions)
+           at System.Threading.Tasks.TaskFactory.FromAsync[TArg1,TArg2](Func`5 beginMethod, Action`1 endMethod, TArg1 arg1, TArg2 arg2, Object state)
+           at System.Net.Security.SslStream.AuthenticateAsServerAsync(SslServerAuthenticationOptions sslServerAuthenticationOptions, CancellationToken cancellationToken)
+           at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRA
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRA
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Debug
+    EventId:
+      Id: 2
+      Name: ConnectionStop
+    OriginalFormat: Connection id "{ConnectionId}" stopped.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRB" stopped.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRB
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Debug
+    EventId:
+      Id: 2
+      Name: ConnectionStop
+    OriginalFormat: Connection id "{ConnectionId}" stopped.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRA" stopped.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRA
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+    LogLevel: Debug
+    EventId:
+      Id: 7
+      Name: ConnectionWriteFin
+    OriginalFormat: 'Connection id "{ConnectionId}" sending FIN because: "{Reason}"'
+  Log:
+    Message: "Connection id \"0HLRJLTR0RQRA\" sending FIN because: \"The Socket transport's send loop completed gracefully.\""
+    Properties:
+      Reason: The Socket transport's send loop completed gracefully.
+      ConnectionId: 0HLRJLTR0RQRA
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+    LogLevel: Debug
+    EventId:
+      Id: 7
+      Name: ConnectionWriteFin
+    OriginalFormat: 'Connection id "{ConnectionId}" sending FIN because: "{Reason}"'
+  Log:
+    Message: "Connection id \"0HLRJLTR0RQRB\" sending FIN because: \"The Socket transport's send loop completed gracefully.\""
+    Properties:
+      Reason: The Socket transport's send loop completed gracefully.
+      ConnectionId: 0HLRJLTR0RQRB
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Debug
+    EventId:
+      Id: 39
+      Name: ConnectionAccepted
+    OriginalFormat: Connection id "{ConnectionId}" accepted.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRC" accepted.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRC
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: ConnectionStart
+    OriginalFormat: Connection id "{ConnectionId}" started.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRC" started.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRC
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+    LogLevel: Debug
+    EventId:
+      Id: 6
+      Name: ConnectionReadFin
+    OriginalFormat: Connection id "{ConnectionId}" received FIN.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRC" received FIN.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRC
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Debug
+    EventId:
+      Id: 39
+      Name: ConnectionAccepted
+    OriginalFormat: Connection id "{ConnectionId}" accepted.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" accepted.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: ConnectionStart
+    OriginalFormat: Connection id "{ConnectionId}" started.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" started.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware
+    LogLevel: Debug
+    EventId:
+      Id: 1
+    OriginalFormat: Failed to authenticate HTTPS connection.
+  Log:
+    Message: Failed to authenticate HTTPS connection.
+    Properties: {}
+    Exception:
+    - Type: System.Security.Authentication.AuthenticationException
+      Message: Authentication failed, see inner exception.
+      Stack: >2-
+           at System.Net.Security.SslStream.StartSendAuthResetSignal(ProtocolToken message, AsyncProtocolRequest asyncRequest, ExceptionDispatchInfo exception)
+           at System.Net.Security.SslStream.CheckCompletionBeforeNextReceive(ProtocolToken message, AsyncProtocolRequest asyncRequest)
+           at System.Net.Security.SslStream.StartSendBlob(Byte[] incoming, Int32 count, AsyncProtocolRequest asyncRequest)
+           at System.Net.Security.SslStream.ProcessReceivedBlob(Byte[] buffer, Int32 count, AsyncProtocolRequest asyncRequest)
+           at System.Net.Security.SslStream.StartReadFrame(Byte[] buffer, Int32 readBytes, AsyncProtocolRequest asyncRequest)
+           at System.Net.Security.SslStream.PartialFrameCallback(AsyncProtocolRequest asyncRequest)
+        --- End of stack trace from previous location where exception was thrown ---
+           at System.Net.Security.SslStream.ThrowIfExceptional()
+           at System.Net.Security.SslStream.InternalEndProcessAuthentication(LazyAsyncResult lazyResult)
+           at System.Net.Security.SslStream.EndProcessAuthentication(IAsyncResult result)
+           at System.Net.Security.SslStream.EndAuthenticateAsServer(IAsyncResult asyncResult)
+           at System.Net.Security.SslStream.<>c.<AuthenticateAsServerAsync>b__69_1(IAsyncResult iar)
+           at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+        --- End of stack trace from previous location where exception was thrown ---
+           at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.InnerOnConnectionAsync(ConnectionContext context)
+    - Type: System.ComponentModel.Win32Exception
+      Message: An unknown error occurred while processing the certificate.
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRC
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRC
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Debug
+    EventId:
+      Id: 2
+      Name: ConnectionStop
+    OriginalFormat: Connection id "{ConnectionId}" stopped.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRC" stopped.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRC
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+    LogLevel: Debug
+    EventId:
+      Id: 7
+      Name: ConnectionWriteFin
+    OriginalFormat: 'Connection id "{ConnectionId}" sending FIN because: "{Reason}"'
+  Log:
+    Message: "Connection id \"0HLRJLTR0RQRC\" sending FIN because: \"The Socket transport's send loop completed gracefully.\""
+    Properties:
+      Reason: The Socket transport's send loop completed gracefully.
+      ConnectionId: 0HLRJLTR0RQRC
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending SETTINGS frame for stream ID 0 with length 18 and flags NONE
+    Properties:
+      flags: NONE
+      id: 0
+      ConnectionId: 0HLRJLTR0RQRD
+      type: SETTINGS
+      length: 18
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0
+    Properties:
+      flags: 0x0
+      id: 0
+      ConnectionId: 0HLRJLTR0RQRD
+      type: WINDOW_UPDATE
+      length: 4
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" received {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" received SETTINGS frame for stream ID 0 with length 18 and flags NONE
+    Properties:
+      flags: NONE
+      id: 0
+      ConnectionId: 0HLRJLTR0RQRD
+      type: SETTINGS
+      length: 18
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK
+    Properties:
+      flags: ACK
+      id: 0
+      ConnectionId: 0HLRJLTR0RQRD
+      type: SETTINGS
+      length: 0
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" received {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0
+    Properties:
+      flags: 0x0
+      id: 0
+      ConnectionId: 0HLRJLTR0RQRD
+      type: WINDOW_UPDATE
+      length: 4
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" received {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" received HEADERS frame for stream ID 1 with length 352 and flags END_STREAM, END_HEADERS, PRIORITY
+    Properties:
+      flags: END_STREAM, END_HEADERS, PRIORITY
+      id: 1
+      ConnectionId: 0HLRJLTR0RQRD
+      type: HEADERS
+      length: 352
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" received {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" received SETTINGS frame for stream ID 0 with length 0 and flags ACK
+    Properties:
+      flags: ACK
+      id: 0
+      ConnectionId: 0HLRJLTR0RQRD
+      type: SETTINGS
+      length: 0
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Information
+    EventId:
+      Id: 1
+  Log:
+    Message: 'Request starting HTTP/2 GET https://localhost:5001/  '
+    Properties:
+      Scheme: https
+      ContentType: 
+      Method: GET
+      ContentLength: 
+      Path: /
+      PathBase: ''
+      Protocol: HTTP/2
+      Host: localhost:5001
+      QueryString: ''
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ParentId: ''
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+    LogLevel: Debug
+    EventId:
+      Id: 0
+      Name: WildcardDetected
+    OriginalFormat: Wildcard detected, all requests with hosts will be allowed.
+  Log:
+    Message: Wildcard detected, all requests with hosts will be allowed.
+    Properties: {}
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ParentId: ''
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: AllHostsAllowed
+    OriginalFormat: All hosts are allowed.
+  Log:
+    Message: All hosts are allowed.
+    Properties: {}
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ParentId: ''
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+    LogLevel: Debug
+    EventId:
+      Id: 4
+      Name: FileTypeNotSupported
+    OriginalFormat: The request path {Path} does not match a supported file type
+  Log:
+    Message: The request path / does not match a supported file type
+    Properties:
+      Path: /
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ParentId: ''
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.Matching.DfaMatcher
+    LogLevel: Debug
+    EventId:
+      Id: 1001
+      Name: CandidatesFound
+    OriginalFormat: "{CandidateCount} candidate(s) found for the request path '{Path}'"
+  Log:
+    Message: 1 candidate(s) found for the request path '/'
+    Properties:
+      Path: /
+      CandidateCount: 1
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ParentId: ''
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.Matching.DfaMatcher
+    LogLevel: Debug
+    EventId:
+      Id: 1005
+      Name: CandiateValid
+    OriginalFormat: Endpoint '{Endpoint}' with route pattern '{RoutePattern}' is valid for the request path '{Path}'
+  Log:
+    Message: Endpoint 'ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/'
+    Properties:
+      RoutePattern: '{controller=Home}/{action=Index}/{id?}'
+      Path: /
+      Endpoint: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ParentId: ''
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: MatchSuccess
+    OriginalFormat: Request matched endpoint '{EndpointName}'
+  Log:
+    Message: Request matched endpoint 'ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)'
+    Properties:
+      EndpointName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ParentId: ''
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.EndpointMiddleware
+    LogLevel: Information
+    EventId:
+      Id: 0
+      Name: ExecutingEndpoint
+    OriginalFormat: Executing endpoint '{EndpointName}'
+  Log:
+    Message: Executing endpoint 'ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)'
+    Properties:
+      EndpointName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ParentId: ''
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory
+    LogLevel: Debug
+    EventId:
+      Id: 12
+      Name: RegisteredModelBinderProviders
+    OriginalFormat: 'Registered model binder providers, in the following order: {ModelBinderProviders}'
+  Log:
+    Message: 'Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider'
+    Properties:
+      ModelBinderProviders: Microsoft.AspNetCore.Mvc.ModelBinding.IModelBinderProvider[]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ParentId: ''
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Information
+    EventId:
+      Id: 3
+      Name: ControllerActionExecuting
+    OriginalFormat: Route matched with {RouteData}. Executing controller action with signature {MethodInfo} on controller {Controller} ({AssemblyName}).
+  Log:
+    Message: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller ExampleWebApplication.Controllers.HomeController (ExampleWebApplication).
+    Properties:
+      RouteData: '{action = "Index", controller = "Home"}'
+      MethodInfo: Microsoft.AspNetCore.Mvc.IActionResult Index()
+      Controller: ExampleWebApplication.Controllers.HomeController
+      AssemblyName: ExampleWebApplication
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: FilterExecutionPlan
+    OriginalFormat: 'Execution plan of {FilterType} filters (in the following order): {Filters}'
+  Log:
+    Message: 'Execution plan of authorization filters (in the following order): None'
+    Properties:
+      FilterType: authorization
+      Filters: System.String[]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: FilterExecutionPlan
+    OriginalFormat: 'Execution plan of {FilterType} filters (in the following order): {Filters}'
+  Log:
+    Message: 'Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter'
+    Properties:
+      FilterType: resource
+      Filters: System.String[]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: FilterExecutionPlan
+    OriginalFormat: 'Execution plan of {FilterType} filters (in the following order): {Filters}'
+  Log:
+    Message: 'Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)'
+    Properties:
+      FilterType: action
+      Filters: System.String[]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: FilterExecutionPlan
+    OriginalFormat: 'Execution plan of {FilterType} filters (in the following order): {Filters}'
+  Log:
+    Message: 'Execution plan of exception filters (in the following order): None'
+    Properties:
+      FilterType: exception
+      Filters: System.String[]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: FilterExecutionPlan
+    OriginalFormat: 'Execution plan of {FilterType} filters (in the following order): {Filters}'
+  Log:
+    Message: 'Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter'
+    Properties:
+      FilterType: result
+      Filters: System.String[]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: BeforeExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: Before executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.'
+    Properties:
+      FilterType: Resource Filter
+      Method: OnResourceExecuting
+      Filter: Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 3
+      Name: AfterExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: After executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.'
+    Properties:
+      FilterType: Resource Filter
+      Method: OnResourceExecuting
+      Filter: Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: ControllerFactoryExecuting
+    OriginalFormat: Executing controller factory for controller {Controller} ({AssemblyName})
+  Log:
+    Message: Executing controller factory for controller ExampleWebApplication.Controllers.HomeController (ExampleWebApplication)
+    Properties:
+      Controller: ExampleWebApplication.Controllers.HomeController
+      AssemblyName: ExampleWebApplication
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Debug
+    EventId:
+      Id: 2
+      Name: ControllerFactoryExecuted
+    OriginalFormat: Executed controller factory for controller {Controller} ({AssemblyName})
+  Log:
+    Message: Executed controller factory for controller ExampleWebApplication.Controllers.HomeController (ExampleWebApplication)
+    Properties:
+      Controller: ExampleWebApplication.Controllers.HomeController
+      AssemblyName: ExampleWebApplication
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: BeforeExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: Before executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.'
+    Properties:
+      FilterType: Action Filter
+      Method: OnActionExecutionAsync
+      Filter: Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: BeforeExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: Before executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.'
+    Properties:
+      FilterType: Action Filter
+      Method: OnActionExecuting
+      Filter: Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 3
+      Name: AfterExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: After executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.'
+    Properties:
+      FilterType: Action Filter
+      Method: OnActionExecuting
+      Filter: Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Information
+    EventId:
+      Id: 1
+      Name: ActionMethodExecuting
+    OriginalFormat: 'Executing action method {ActionName} - Validation state: {ValidationState}'
+  Log:
+    Message: 'Executing action method ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication) - Validation state: Valid'
+    Properties:
+      ValidationState: Valid
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Information
+    EventId:
+      Id: 2
+      Name: ActionMethodExecuted
+    OriginalFormat: Executed action method {ActionName}, returned result {ActionResult} in {ElapsedMilliseconds}ms.
+  Log:
+    Message: Executed action method ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.9288000000000001ms.
+    Properties:
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ActionResult: Microsoft.AspNetCore.Mvc.ViewResult
+      ElapsedMilliseconds: 0.92880000000000007
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: BeforeExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: Before executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.'
+    Properties:
+      FilterType: Action Filter
+      Method: OnActionExecuted
+      Filter: Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 3
+      Name: AfterExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: After executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.'
+    Properties:
+      FilterType: Action Filter
+      Method: OnActionExecuted
+      Filter: Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 3
+      Name: AfterExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: After executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.'
+    Properties:
+      FilterType: Action Filter
+      Method: OnActionExecutionAsync
+      Filter: Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: BeforeExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: Before executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.'
+    Properties:
+      FilterType: Result Filter
+      Method: OnResultExecuting
+      Filter: Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 3
+      Name: AfterExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: After executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.'
+    Properties:
+      FilterType: Result Filter
+      Method: OnResultExecuting
+      Filter: Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 4
+      Name: BeforeExecutingActionResult
+    OriginalFormat: Before executing action result {ActionResult}.
+  Log:
+    Message: Before executing action result Microsoft.AspNetCore.Mvc.ViewResult.
+    Properties:
+      ActionResult: Microsoft.AspNetCore.Mvc.ViewResult
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+    LogLevel: Debug
+    EventId:
+      Id: 3
+      Name: ViewCompilerLocatedCompiledView
+    OriginalFormat: "Initializing Razor view compiler with compiled view: '{ViewName}'."
+  Log:
+    Message: "Initializing Razor view compiler with compiled view: '/Views/Home/Index.cshtml'."
+    Properties:
+      ViewName: /Views/Home/Index.cshtml
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+    LogLevel: Debug
+    EventId:
+      Id: 3
+      Name: ViewCompilerLocatedCompiledView
+    OriginalFormat: "Initializing Razor view compiler with compiled view: '{ViewName}'."
+  Log:
+    Message: "Initializing Razor view compiler with compiled view: '/Views/Home/Privacy.cshtml'."
+    Properties:
+      ViewName: /Views/Home/Privacy.cshtml
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+    LogLevel: Debug
+    EventId:
+      Id: 3
+      Name: ViewCompilerLocatedCompiledView
+    OriginalFormat: "Initializing Razor view compiler with compiled view: '{ViewName}'."
+  Log:
+    Message: "Initializing Razor view compiler with compiled view: '/Views/Shared/Error.cshtml'."
+    Properties:
+      ViewName: /Views/Shared/Error.cshtml
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+    LogLevel: Debug
+    EventId:
+      Id: 3
+      Name: ViewCompilerLocatedCompiledView
+    OriginalFormat: "Initializing Razor view compiler with compiled view: '{ViewName}'."
+  Log:
+    Message: "Initializing Razor view compiler with compiled view: '/Views/Shared/_Layout.cshtml'."
+    Properties:
+      ViewName: /Views/Shared/_Layout.cshtml
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+    LogLevel: Debug
+    EventId:
+      Id: 3
+      Name: ViewCompilerLocatedCompiledView
+    OriginalFormat: "Initializing Razor view compiler with compiled view: '{ViewName}'."
+  Log:
+    Message: "Initializing Razor view compiler with compiled view: '/Views/Shared/_ValidationScriptsPartial.cshtml'."
+    Properties:
+      ViewName: /Views/Shared/_ValidationScriptsPartial.cshtml
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+    LogLevel: Debug
+    EventId:
+      Id: 3
+      Name: ViewCompilerLocatedCompiledView
+    OriginalFormat: "Initializing Razor view compiler with compiled view: '{ViewName}'."
+  Log:
+    Message: "Initializing Razor view compiler with compiled view: '/Views/_ViewImports.cshtml'."
+    Properties:
+      ViewName: /Views/_ViewImports.cshtml
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+    LogLevel: Debug
+    EventId:
+      Id: 3
+      Name: ViewCompilerLocatedCompiledView
+    OriginalFormat: "Initializing Razor view compiler with compiled view: '{ViewName}'."
+  Log:
+    Message: "Initializing Razor view compiler with compiled view: '/Views/_ViewStart.cshtml'."
+    Properties:
+      ViewName: /Views/_ViewStart.cshtml
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: ViewLookupCacheMiss
+    OriginalFormat: View lookup cache miss for view '{ViewName}' in controller '{ControllerName}'.
+  Log:
+    Message: View lookup cache miss for view 'Index' in controller 'Home'.
+    Properties:
+      ViewName: Index
+      ControllerName: Home
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+    LogLevel: Trace
+    EventId:
+      Id: 5
+      Name: ViewCompilerLocatedCompiledViewForPath
+    OriginalFormat: Located compiled view for view at path '{Path}'.
+  Log:
+    Message: Located compiled view for view at path '/Views/Home/Index.cshtml'.
+    Properties:
+      Path: /Views/Home/Index.cshtml
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+    LogLevel: Trace
+    EventId:
+      Id: 7
+      Name: ViewCompilerCouldNotFindFileAtPath
+    OriginalFormat: Could not find a file for view at path '{Path}'.
+  Log:
+    Message: Could not find a file for view at path '/Views/Home/_ViewStart.cshtml'.
+    Properties:
+      Path: /Views/Home/_ViewStart.cshtml
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+    LogLevel: Trace
+    EventId:
+      Id: 5
+      Name: ViewCompilerLocatedCompiledViewForPath
+    OriginalFormat: Located compiled view for view at path '{Path}'.
+  Log:
+    Message: Located compiled view for view at path '/Views/_ViewStart.cshtml'.
+    Properties:
+      Path: /Views/_ViewStart.cshtml
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+    LogLevel: Trace
+    EventId:
+      Id: 7
+      Name: ViewCompilerCouldNotFindFileAtPath
+    OriginalFormat: Could not find a file for view at path '{Path}'.
+  Log:
+    Message: Could not find a file for view at path '/_ViewStart.cshtml'.
+    Properties:
+      Path: /_ViewStart.cshtml
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+    LogLevel: Information
+    EventId:
+      Id: 1
+      Name: ViewResultExecuting
+    OriginalFormat: Executing ViewResult, running view {ViewName}.
+  Log:
+    Message: Executing ViewResult, running view Index.
+    Properties:
+      ViewName: Index
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+    LogLevel: Debug
+    EventId:
+      Id: 2
+      Name: ViewFound
+    OriginalFormat: The view path '{ViewFilePath}' was found in {ElapsedMilliseconds}ms.
+  Log:
+    Message: The view path '/Views/Home/Index.cshtml' was found in 28.3272ms.
+    Properties:
+      ViewFilePath: /Views/Home/Index.cshtml
+      ElapsedMilliseconds: 28.327200000000001
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: ViewLookupCacheMiss
+    OriginalFormat: View lookup cache miss for view '{ViewName}' in controller '{ControllerName}'.
+  Log:
+    Message: View lookup cache miss for view '_Layout' in controller 'Home'.
+    Properties:
+      ViewName: _Layout
+      ControllerName: Home
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+    LogLevel: Trace
+    EventId:
+      Id: 7
+      Name: ViewCompilerCouldNotFindFileAtPath
+    OriginalFormat: Could not find a file for view at path '{Path}'.
+  Log:
+    Message: Could not find a file for view at path '/Views/Home/_Layout.cshtml'.
+    Properties:
+      Path: /Views/Home/_Layout.cshtml
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Razor.Compilation.DefaultViewCompiler
+    LogLevel: Trace
+    EventId:
+      Id: 5
+      Name: ViewCompilerLocatedCompiledViewForPath
+    OriginalFormat: Located compiled view for view at path '{Path}'.
+  Log:
+    Message: Located compiled view for view at path '/Views/Shared/_Layout.cshtml'.
+    Properties:
+      Path: /Views/Shared/_Layout.cshtml
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+    LogLevel: Debug
+    EventId:
+      Id: 100
+      Name: EndpointsFound
+    OriginalFormat: Found the endpoints {Endpoints} for address {Address}
+  Log:
+    Message: 'Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress'
+    Properties:
+      Address: Microsoft.AspNetCore.Routing.RouteValuesAddress
+      Endpoints: System.Linq.Enumerable+SelectEnumerableIterator`2[Microsoft.AspNetCore.Http.Endpoint,System.String]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+    LogLevel: Debug
+    EventId:
+      Id: 102
+      Name: TemplateSucceeded
+    OriginalFormat: Successfully processed template {Template} for {Endpoint} resulting in {Path} and {Query}
+  Log:
+    Message: 'Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and '
+    Properties:
+      Template: '{controller=Home}/{action=Index}/{id?}'
+      Path: ''
+      Query: ''
+      Endpoint: 'Route: {controller=Home}/{action=Index}/{id?}'
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+    LogLevel: Debug
+    EventId:
+      Id: 105
+      Name: LinkGenerationSucceeded
+    OriginalFormat: Link generation succeeded for endpoints {Endpoints} with result {URI}
+  Log:
+    Message: 'Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /'
+    Properties:
+      Endpoints: System.Linq.Enumerable+SelectEnumerableIterator`2[Microsoft.AspNetCore.Http.Endpoint,System.String]
+      URI: /
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+    LogLevel: Debug
+    EventId:
+      Id: 100
+      Name: EndpointsFound
+    OriginalFormat: Found the endpoints {Endpoints} for address {Address}
+  Log:
+    Message: 'Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress'
+    Properties:
+      Address: Microsoft.AspNetCore.Routing.RouteValuesAddress
+      Endpoints: System.Linq.Enumerable+SelectEnumerableIterator`2[Microsoft.AspNetCore.Http.Endpoint,System.String]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+    LogLevel: Debug
+    EventId:
+      Id: 102
+      Name: TemplateSucceeded
+    OriginalFormat: Successfully processed template {Template} for {Endpoint} resulting in {Path} and {Query}
+  Log:
+    Message: 'Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in  and '
+    Properties:
+      Template: '{controller=Home}/{action=Index}/{id?}'
+      Path: ''
+      Query: ''
+      Endpoint: 'Route: {controller=Home}/{action=Index}/{id?}'
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+    LogLevel: Debug
+    EventId:
+      Id: 105
+      Name: LinkGenerationSucceeded
+    OriginalFormat: Link generation succeeded for endpoints {Endpoints} with result {URI}
+  Log:
+    Message: 'Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /'
+    Properties:
+      Endpoints: System.Linq.Enumerable+SelectEnumerableIterator`2[Microsoft.AspNetCore.Http.Endpoint,System.String]
+      URI: /
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+    LogLevel: Debug
+    EventId:
+      Id: 100
+      Name: EndpointsFound
+    OriginalFormat: Found the endpoints {Endpoints} for address {Address}
+  Log:
+    Message: 'Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress'
+    Properties:
+      Address: Microsoft.AspNetCore.Routing.RouteValuesAddress
+      Endpoints: System.Linq.Enumerable+SelectEnumerableIterator`2[Microsoft.AspNetCore.Http.Endpoint,System.String]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+    LogLevel: Debug
+    EventId:
+      Id: 102
+      Name: TemplateSucceeded
+    OriginalFormat: Successfully processed template {Template} for {Endpoint} resulting in {Path} and {Query}
+  Log:
+    Message: 'Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and '
+    Properties:
+      Template: '{controller=Home}/{action=Index}/{id?}'
+      Path: /Home/Privacy
+      Query: ''
+      Endpoint: 'Route: {controller=Home}/{action=Index}/{id?}'
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+    LogLevel: Debug
+    EventId:
+      Id: 105
+      Name: LinkGenerationSucceeded
+    OriginalFormat: Link generation succeeded for endpoints {Endpoints} with result {URI}
+  Log:
+    Message: 'Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy'
+    Properties:
+      Endpoints: System.Linq.Enumerable+SelectEnumerableIterator`2[Microsoft.AspNetCore.Http.Endpoint,System.String]
+      URI: /Home/Privacy
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+    LogLevel: Debug
+    EventId:
+      Id: 100
+      Name: EndpointsFound
+    OriginalFormat: Found the endpoints {Endpoints} for address {Address}
+  Log:
+    Message: 'Found the endpoints Route: {controller=Home}/{action=Index}/{id?} for address Microsoft.AspNetCore.Routing.RouteValuesAddress'
+    Properties:
+      Address: Microsoft.AspNetCore.Routing.RouteValuesAddress
+      Endpoints: System.Linq.Enumerable+SelectEnumerableIterator`2[Microsoft.AspNetCore.Http.Endpoint,System.String]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+    LogLevel: Debug
+    EventId:
+      Id: 102
+      Name: TemplateSucceeded
+    OriginalFormat: Successfully processed template {Template} for {Endpoint} resulting in {Path} and {Query}
+  Log:
+    Message: 'Successfully processed template {controller=Home}/{action=Index}/{id?} for Route: {controller=Home}/{action=Index}/{id?} resulting in /Home/Privacy and '
+    Properties:
+      Template: '{controller=Home}/{action=Index}/{id?}'
+      Path: /Home/Privacy
+      Query: ''
+      Endpoint: 'Route: {controller=Home}/{action=Index}/{id?}'
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.DefaultLinkGenerator
+    LogLevel: Debug
+    EventId:
+      Id: 105
+      Name: LinkGenerationSucceeded
+    OriginalFormat: Link generation succeeded for endpoints {Endpoints} with result {URI}
+  Log:
+    Message: 'Link generation succeeded for endpoints Route: {controller=Home}/{action=Index}/{id?} with result /Home/Privacy'
+    Properties:
+      Endpoints: System.Linq.Enumerable+SelectEnumerableIterator`2[Microsoft.AspNetCore.Http.Endpoint,System.String]
+      URI: /Home/Privacy
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending HEADERS frame for stream ID 1 with length 92 and flags END_HEADERS
+    Properties:
+      flags: END_HEADERS
+      id: 1
+      ConnectionId: 0HLRJLTR0RQRD
+      type: HEADERS
+      length: 92
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 1 with length 2257 and flags NONE
+    Properties:
+      flags: NONE
+      id: 1
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 2257
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+    LogLevel: Information
+    EventId:
+      Id: 4
+      Name: ViewResultExecuted
+    OriginalFormat: Executed ViewResult - view {ViewName} executed in {ElapsedMilliseconds}ms.
+  Log:
+    Message: Executed ViewResult - view Index executed in 245.78240000000002ms.
+    Properties:
+      ViewName: Index
+      ElapsedMilliseconds: 245.78240000000002
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 5
+      Name: AfterExecutingActionResult
+    OriginalFormat: After executing action result {ActionResult}.
+  Log:
+    Message: After executing action result Microsoft.AspNetCore.Mvc.ViewResult.
+    Properties:
+      ActionResult: Microsoft.AspNetCore.Mvc.ViewResult
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: BeforeExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: Before executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.'
+    Properties:
+      FilterType: Result Filter
+      Method: OnResultExecuted
+      Filter: Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 3
+      Name: AfterExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: After executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.'
+    Properties:
+      FilterType: Result Filter
+      Method: OnResultExecuted
+      Filter: Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: BeforeExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: Before executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.'
+    Properties:
+      FilterType: Resource Filter
+      Method: OnResourceExecuted
+      Filter: Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 3
+      Name: AfterExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: After executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.'
+    Properties:
+      FilterType: Resource Filter
+      Method: OnResourceExecuted
+      Filter: Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Information
+    EventId:
+      Id: 2
+      Name: ActionExecuted
+    OriginalFormat: Executed action {ActionName} in {ElapsedMilliseconds}ms
+  Log:
+    Message: Executed action ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication) in 273.6849ms
+    Properties:
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ElapsedMilliseconds: 273.68490000000003
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ActionName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+      ParentId: ''
+      ActionId: 32b3f5ca-afc4-4c8f-8497-055d5985a0d0
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.EndpointMiddleware
+    LogLevel: Information
+    EventId:
+      Id: 1
+      Name: ExecutedEndpoint
+    OriginalFormat: Executed endpoint '{EndpointName}'
+  Log:
+    Message: Executed endpoint 'ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)'
+    Properties:
+      EndpointName: ExampleWebApplication.Controllers.HomeController.Index (ExampleWebApplication)
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ParentId: ''
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM
+    Properties:
+      flags: END_STREAM
+      id: 1
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 0
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Information
+    EventId:
+      Id: 2
+  Log:
+    Message: Request finished in 388.82930000000005ms 200 text/html; charset=utf-8
+    Properties:
+      ContentType: text/html; charset=utf-8
+      ElapsedMilliseconds: 388.82930000000005
+      StatusCode: 200
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000001
+      SpanId: '|3171295-47139405049770f0.'
+      RequestPath: /
+      ParentId: ''
+      TraceId: 3171295-47139405049770f0
+    Levels:
+    - 'RequestPath:/ RequestId:0HLRJLTR0RQRD:00000001, SpanId:|3171295-47139405049770f0., TraceId:3171295-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" received {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" received HEADERS frame for stream ID 3 with length 101 and flags END_STREAM, END_HEADERS, PRIORITY
+    Properties:
+      flags: END_STREAM, END_HEADERS, PRIORITY
+      id: 3
+      ConnectionId: 0HLRJLTR0RQRD
+      type: HEADERS
+      length: 101
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" received {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" received HEADERS frame for stream ID 5 with length 33 and flags END_STREAM, END_HEADERS, PRIORITY
+    Properties:
+      flags: END_STREAM, END_HEADERS, PRIORITY
+      id: 5
+      ConnectionId: 0HLRJLTR0RQRD
+      type: HEADERS
+      length: 33
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" received {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" received HEADERS frame for stream ID 7 with length 51 and flags END_STREAM, END_HEADERS, PRIORITY
+    Properties:
+      flags: END_STREAM, END_HEADERS, PRIORITY
+      id: 7
+      ConnectionId: 0HLRJLTR0RQRD
+      type: HEADERS
+      length: 51
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" received {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" received HEADERS frame for stream ID 9 with length 57 and flags END_STREAM, END_HEADERS, PRIORITY
+    Properties:
+      flags: END_STREAM, END_HEADERS, PRIORITY
+      id: 9
+      ConnectionId: 0HLRJLTR0RQRD
+      type: HEADERS
+      length: 57
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" received {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" received HEADERS frame for stream ID 11 with length 69 and flags END_STREAM, END_HEADERS, PRIORITY
+    Properties:
+      flags: END_STREAM, END_HEADERS, PRIORITY
+      id: 11
+      ConnectionId: 0HLRJLTR0RQRD
+      type: HEADERS
+      length: 69
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Information
+    EventId:
+      Id: 1
+  Log:
+    Message: 'Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/css/bootstrap.min.css  '
+    Properties:
+      Scheme: https
+      ContentType: 
+      Method: GET
+      ContentLength: 
+      Path: /lib/bootstrap/dist/css/bootstrap.min.css
+      PathBase: ''
+      Protocol: HTTP/2
+      Host: localhost:5001
+      QueryString: ''
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000003
+      SpanId: '|3171297-47139405049770f0.'
+      RequestPath: /lib/bootstrap/dist/css/bootstrap.min.css
+      ParentId: ''
+      TraceId: 3171297-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/bootstrap/dist/css/bootstrap.min.css RequestId:0HLRJLTR0RQRD:00000003, SpanId:|3171297-47139405049770f0., TraceId:3171297-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Information
+    EventId:
+      Id: 1
+  Log:
+    Message: 'Request starting HTTP/2 GET https://localhost:5001/css/site.css  '
+    Properties:
+      Scheme: https
+      ContentType: 
+      Method: GET
+      ContentLength: 
+      Path: /css/site.css
+      PathBase: ''
+      Protocol: HTTP/2
+      Host: localhost:5001
+      QueryString: ''
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000005
+      SpanId: '|3171296-47139405049770f0.'
+      RequestPath: /css/site.css
+      ParentId: ''
+      TraceId: 3171296-47139405049770f0
+    Levels:
+    - 'RequestPath:/css/site.css RequestId:0HLRJLTR0RQRD:00000005, SpanId:|3171296-47139405049770f0., TraceId:3171296-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Information
+    EventId:
+      Id: 1
+  Log:
+    Message: 'Request starting HTTP/2 GET https://localhost:5001/lib/jquery/dist/jquery.min.js  '
+    Properties:
+      Scheme: https
+      ContentType: 
+      Method: GET
+      ContentLength: 
+      Path: /lib/jquery/dist/jquery.min.js
+      PathBase: ''
+      Protocol: HTTP/2
+      Host: localhost:5001
+      QueryString: ''
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000007
+      SpanId: '|3171298-47139405049770f0.'
+      RequestPath: /lib/jquery/dist/jquery.min.js
+      ParentId: ''
+      TraceId: 3171298-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/jquery/dist/jquery.min.js RequestId:0HLRJLTR0RQRD:00000007, SpanId:|3171298-47139405049770f0., TraceId:3171298-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: AllHostsAllowed
+    OriginalFormat: All hosts are allowed.
+  Log:
+    Message: All hosts are allowed.
+    Properties: {}
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000003
+      SpanId: '|3171297-47139405049770f0.'
+      RequestPath: /lib/bootstrap/dist/css/bootstrap.min.css
+      ParentId: ''
+      TraceId: 3171297-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/bootstrap/dist/css/bootstrap.min.css RequestId:0HLRJLTR0RQRD:00000003, SpanId:|3171297-47139405049770f0., TraceId:3171297-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: AllHostsAllowed
+    OriginalFormat: All hosts are allowed.
+  Log:
+    Message: All hosts are allowed.
+    Properties: {}
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000007
+      SpanId: '|3171298-47139405049770f0.'
+      RequestPath: /lib/jquery/dist/jquery.min.js
+      ParentId: ''
+      TraceId: 3171298-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/jquery/dist/jquery.min.js RequestId:0HLRJLTR0RQRD:00000007, SpanId:|3171298-47139405049770f0., TraceId:3171298-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Information
+    EventId:
+      Id: 1
+  Log:
+    Message: 'Request starting HTTP/2 GET https://localhost:5001/lib/bootstrap/dist/js/bootstrap.bundle.min.js  '
+    Properties:
+      Scheme: https
+      ContentType: 
+      Method: GET
+      ContentLength: 
+      Path: /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+      PathBase: ''
+      Protocol: HTTP/2
+      Host: localhost:5001
+      QueryString: ''
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000009
+      SpanId: '|3171299-47139405049770f0.'
+      RequestPath: /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+      ParentId: ''
+      TraceId: 3171299-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/bootstrap/dist/js/bootstrap.bundle.min.js RequestId:0HLRJLTR0RQRD:00000009, SpanId:|3171299-47139405049770f0., TraceId:3171299-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: AllHostsAllowed
+    OriginalFormat: All hosts are allowed.
+  Log:
+    Message: All hosts are allowed.
+    Properties: {}
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000009
+      SpanId: '|3171299-47139405049770f0.'
+      RequestPath: /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+      ParentId: ''
+      TraceId: 3171299-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/bootstrap/dist/js/bootstrap.bundle.min.js RequestId:0HLRJLTR0RQRD:00000009, SpanId:|3171299-47139405049770f0., TraceId:3171299-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Information
+    EventId:
+      Id: 1
+  Log:
+    Message: 'Request starting HTTP/2 GET https://localhost:5001/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  '
+    Properties:
+      Scheme: https
+      ContentType: 
+      Method: GET
+      ContentLength: 
+      Path: /js/site.js
+      PathBase: ''
+      Protocol: HTTP/2
+      Host: localhost:5001
+      QueryString: ?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000B
+      SpanId: '|317129a-47139405049770f0.'
+      RequestPath: /js/site.js
+      ParentId: ''
+      TraceId: 317129a-47139405049770f0
+    Levels:
+    - 'RequestPath:/js/site.js RequestId:0HLRJLTR0RQRD:0000000B, SpanId:|317129a-47139405049770f0., TraceId:317129a-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: AllHostsAllowed
+    OriginalFormat: All hosts are allowed.
+  Log:
+    Message: All hosts are allowed.
+    Properties: {}
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000B
+      SpanId: '|317129a-47139405049770f0.'
+      RequestPath: /js/site.js
+      ParentId: ''
+      TraceId: 317129a-47139405049770f0
+    Levels:
+    - 'RequestPath:/js/site.js RequestId:0HLRJLTR0RQRD:0000000B, SpanId:|317129a-47139405049770f0., TraceId:317129a-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+    LogLevel: Trace
+    EventId:
+      Id: 0
+    OriginalFormat: Range header's value is empty.
+  Log:
+    Message: Range header's value is empty.
+    Properties: {}
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000B
+      SpanId: '|317129a-47139405049770f0.'
+      RequestPath: /js/site.js
+      ParentId: ''
+      TraceId: 317129a-47139405049770f0
+    Levels:
+    - 'RequestPath:/js/site.js RequestId:0HLRJLTR0RQRD:0000000B, SpanId:|317129a-47139405049770f0., TraceId:317129a-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+    LogLevel: Trace
+    EventId:
+      Id: 0
+    OriginalFormat: Range header's value is empty.
+  Log:
+    Message: Range header's value is empty.
+    Properties: {}
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000003
+      SpanId: '|3171297-47139405049770f0.'
+      RequestPath: /lib/bootstrap/dist/css/bootstrap.min.css
+      ParentId: ''
+      TraceId: 3171297-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/bootstrap/dist/css/bootstrap.min.css RequestId:0HLRJLTR0RQRD:00000003, SpanId:|3171297-47139405049770f0., TraceId:3171297-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+    LogLevel: Trace
+    EventId:
+      Id: 0
+    OriginalFormat: Range header's value is empty.
+  Log:
+    Message: Range header's value is empty.
+    Properties: {}
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000007
+      SpanId: '|3171298-47139405049770f0.'
+      RequestPath: /lib/jquery/dist/jquery.min.js
+      ParentId: ''
+      TraceId: 3171298-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/jquery/dist/jquery.min.js RequestId:0HLRJLTR0RQRD:00000007, SpanId:|3171298-47139405049770f0., TraceId:3171298-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+    LogLevel: Trace
+    EventId:
+      Id: 0
+    OriginalFormat: Range header's value is empty.
+  Log:
+    Message: Range header's value is empty.
+    Properties: {}
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000009
+      SpanId: '|3171299-47139405049770f0.'
+      RequestPath: /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+      ParentId: ''
+      TraceId: 3171299-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/bootstrap/dist/js/bootstrap.bundle.min.js RequestId:0HLRJLTR0RQRD:00000009, SpanId:|3171299-47139405049770f0., TraceId:3171299-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+    LogLevel: Trace
+    EventId:
+      Id: 0
+    OriginalFormat: Range header's value is empty.
+  Log:
+    Message: Range header's value is empty.
+    Properties: {}
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000005
+      SpanId: '|3171296-47139405049770f0.'
+      RequestPath: /css/site.css
+      ParentId: ''
+      TraceId: 3171296-47139405049770f0
+    Levels:
+    - 'RequestPath:/css/site.css RequestId:0HLRJLTR0RQRD:00000005, SpanId:|3171296-47139405049770f0., TraceId:3171296-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending HEADERS frame for stream ID 3 with length 189 and flags END_HEADERS
+    Properties:
+      flags: END_HEADERS
+      id: 3
+      ConnectionId: 0HLRJLTR0RQRD
+      type: HEADERS
+      length: 189
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000003
+      SpanId: '|3171297-47139405049770f0.'
+      RequestPath: /lib/bootstrap/dist/css/bootstrap.min.css
+      ParentId: ''
+      TraceId: 3171297-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/bootstrap/dist/css/bootstrap.min.css RequestId:0HLRJLTR0RQRD:00000003, SpanId:|3171297-47139405049770f0., TraceId:3171297-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending HEADERS frame for stream ID 11 with length 200 and flags END_HEADERS
+    Properties:
+      flags: END_HEADERS
+      id: 11
+      ConnectionId: 0HLRJLTR0RQRD
+      type: HEADERS
+      length: 200
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000B
+      SpanId: '|317129a-47139405049770f0.'
+      RequestPath: /js/site.js
+      ParentId: ''
+      TraceId: 317129a-47139405049770f0
+    Levels:
+    - 'RequestPath:/js/site.js RequestId:0HLRJLTR0RQRD:0000000B, SpanId:|317129a-47139405049770f0., TraceId:317129a-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 11 with length 230 and flags NONE
+    Properties:
+      flags: NONE
+      id: 11
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 230
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+    LogLevel: Information
+    EventId:
+      Id: 2
+      Name: FileServed
+    OriginalFormat: "Sending file. Request path: '{VirtualPath}'. Physical path: '{PhysicalPath}'"
+  Log:
+    Message: "Sending file. Request path: '/js/site.js'. Physical path: 'C:\\Users\\Administrator\\projects\\github.com\\lodejard\\watch-logging\\src\\ExampleWebApplication\\wwwroot\\js\\site.js'"
+    Properties:
+      VirtualPath: /js/site.js
+      PhysicalPath: C:\Users\Administrator\projects\github.com\lodejard\watch-logging\src\ExampleWebApplication\wwwroot\js\site.js
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000B
+      SpanId: '|317129a-47139405049770f0.'
+      RequestPath: /js/site.js
+      ParentId: ''
+      TraceId: 317129a-47139405049770f0
+    Levels:
+    - 'RequestPath:/js/site.js RequestId:0HLRJLTR0RQRD:0000000B, SpanId:|317129a-47139405049770f0., TraceId:317129a-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 11 with length 0 and flags END_STREAM
+    Properties:
+      flags: END_STREAM
+      id: 11
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 0
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Information
+    EventId:
+      Id: 2
+  Log:
+    Message: Request finished in 18.5215ms 200 application/javascript
+    Properties:
+      ContentType: application/javascript
+      ElapsedMilliseconds: 18.5215
+      StatusCode: 200
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000B
+      SpanId: '|317129a-47139405049770f0.'
+      RequestPath: /js/site.js
+      ParentId: ''
+      TraceId: 317129a-47139405049770f0
+    Levels:
+    - 'RequestPath:/js/site.js RequestId:0HLRJLTR0RQRD:0000000B, SpanId:|317129a-47139405049770f0., TraceId:317129a-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending HEADERS frame for stream ID 7 with length 202 and flags END_HEADERS
+    Properties:
+      flags: END_HEADERS
+      id: 7
+      ConnectionId: 0HLRJLTR0RQRD
+      type: HEADERS
+      length: 202
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000007
+      SpanId: '|3171298-47139405049770f0.'
+      RequestPath: /lib/jquery/dist/jquery.min.js
+      ParentId: ''
+      TraceId: 3171298-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/jquery/dist/jquery.min.js RequestId:0HLRJLTR0RQRD:00000007, SpanId:|3171298-47139405049770f0., TraceId:3171298-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending HEADERS frame for stream ID 5 with length 187 and flags END_HEADERS
+    Properties:
+      flags: END_HEADERS
+      id: 5
+      ConnectionId: 0HLRJLTR0RQRD
+      type: HEADERS
+      length: 187
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000005
+      SpanId: '|3171296-47139405049770f0.'
+      RequestPath: /css/site.css
+      ParentId: ''
+      TraceId: 3171296-47139405049770f0
+    Levels:
+    - 'RequestPath:/css/site.css RequestId:0HLRJLTR0RQRD:00000005, SpanId:|3171296-47139405049770f0., TraceId:3171296-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 5 with length 1417 and flags NONE
+    Properties:
+      flags: NONE
+      id: 5
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 1417
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+    LogLevel: Information
+    EventId:
+      Id: 2
+      Name: FileServed
+    OriginalFormat: "Sending file. Request path: '{VirtualPath}'. Physical path: '{PhysicalPath}'"
+  Log:
+    Message: "Sending file. Request path: '/css/site.css'. Physical path: 'C:\\Users\\Administrator\\projects\\github.com\\lodejard\\watch-logging\\src\\ExampleWebApplication\\wwwroot\\css\\site.css'"
+    Properties:
+      VirtualPath: /css/site.css
+      PhysicalPath: C:\Users\Administrator\projects\github.com\lodejard\watch-logging\src\ExampleWebApplication\wwwroot\css\site.css
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000005
+      SpanId: '|3171296-47139405049770f0.'
+      RequestPath: /css/site.css
+      ParentId: ''
+      TraceId: 3171296-47139405049770f0
+    Levels:
+    - 'RequestPath:/css/site.css RequestId:0HLRJLTR0RQRD:00000005, SpanId:|3171296-47139405049770f0., TraceId:3171296-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM
+    Properties:
+      flags: END_STREAM
+      id: 5
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 0
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Information
+    EventId:
+      Id: 2
+  Log:
+    Message: Request finished in 19.4313ms 200 text/css
+    Properties:
+      ContentType: text/css
+      ElapsedMilliseconds: 19.4313
+      StatusCode: 200
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000005
+      SpanId: '|3171296-47139405049770f0.'
+      RequestPath: /css/site.css
+      ParentId: ''
+      TraceId: 3171296-47139405049770f0
+    Levels:
+    - 'RequestPath:/css/site.css RequestId:0HLRJLTR0RQRD:00000005, SpanId:|3171296-47139405049770f0., TraceId:3171296-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending HEADERS frame for stream ID 9 with length 202 and flags END_HEADERS
+    Properties:
+      flags: END_HEADERS
+      id: 9
+      ConnectionId: 0HLRJLTR0RQRD
+      type: HEADERS
+      length: 202
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000009
+      SpanId: '|3171299-47139405049770f0.'
+      RequestPath: /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+      ParentId: ''
+      TraceId: 3171299-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/bootstrap/dist/js/bootstrap.bundle.min.js RequestId:0HLRJLTR0RQRD:00000009, SpanId:|3171299-47139405049770f0., TraceId:3171299-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 7 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 7
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 3 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 3
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 9 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 9
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 7 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 7
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 3 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 3
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 9 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 9
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 7 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 7
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 9 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 9
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 3 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 3
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 7 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 7
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 9 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 9
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 3 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 3
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 7 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 7
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 3 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 3
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 9 with length 13105 and flags NONE
+    Properties:
+      flags: NONE
+      id: 9
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 13105
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 7 with length 5009 and flags NONE
+    Properties:
+      flags: NONE
+      id: 7
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 5009
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 3 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 3
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 3 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 3
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 3 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 3
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 3 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 3
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 3 with length 8308 and flags NONE
+    Properties:
+      flags: NONE
+      id: 3
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 8308
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+    LogLevel: Information
+    EventId:
+      Id: 2
+      Name: FileServed
+    OriginalFormat: "Sending file. Request path: '{VirtualPath}'. Physical path: '{PhysicalPath}'"
+  Log:
+    Message: "Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\\Users\\Administrator\\projects\\github.com\\lodejard\\watch-logging\\src\\ExampleWebApplication\\wwwroot\\lib\\jquery\\dist\\jquery.min.js'"
+    Properties:
+      VirtualPath: /lib/jquery/dist/jquery.min.js
+      PhysicalPath: C:\Users\Administrator\projects\github.com\lodejard\watch-logging\src\ExampleWebApplication\wwwroot\lib\jquery\dist\jquery.min.js
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000007
+      SpanId: '|3171298-47139405049770f0.'
+      RequestPath: /lib/jquery/dist/jquery.min.js
+      ParentId: ''
+      TraceId: 3171298-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/jquery/dist/jquery.min.js RequestId:0HLRJLTR0RQRD:00000007, SpanId:|3171298-47139405049770f0., TraceId:3171298-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+    LogLevel: Information
+    EventId:
+      Id: 2
+      Name: FileServed
+    OriginalFormat: "Sending file. Request path: '{VirtualPath}'. Physical path: '{PhysicalPath}'"
+  Log:
+    Message: "Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\\Users\\Administrator\\projects\\github.com\\lodejard\\watch-logging\\src\\ExampleWebApplication\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css'"
+    Properties:
+      VirtualPath: /lib/bootstrap/dist/css/bootstrap.min.css
+      PhysicalPath: C:\Users\Administrator\projects\github.com\lodejard\watch-logging\src\ExampleWebApplication\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000003
+      SpanId: '|3171297-47139405049770f0.'
+      RequestPath: /lib/bootstrap/dist/css/bootstrap.min.css
+      ParentId: ''
+      TraceId: 3171297-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/bootstrap/dist/css/bootstrap.min.css RequestId:0HLRJLTR0RQRD:00000003, SpanId:|3171297-47139405049770f0., TraceId:3171297-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+    LogLevel: Information
+    EventId:
+      Id: 2
+      Name: FileServed
+    OriginalFormat: "Sending file. Request path: '{VirtualPath}'. Physical path: '{PhysicalPath}'"
+  Log:
+    Message: "Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\\Users\\Administrator\\projects\\github.com\\lodejard\\watch-logging\\src\\ExampleWebApplication\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js'"
+    Properties:
+      VirtualPath: /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+      PhysicalPath: C:\Users\Administrator\projects\github.com\lodejard\watch-logging\src\ExampleWebApplication\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000009
+      SpanId: '|3171299-47139405049770f0.'
+      RequestPath: /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+      ParentId: ''
+      TraceId: 3171299-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/bootstrap/dist/js/bootstrap.bundle.min.js RequestId:0HLRJLTR0RQRD:00000009, SpanId:|3171299-47139405049770f0., TraceId:3171299-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM
+    Properties:
+      flags: END_STREAM
+      id: 3
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 0
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Information
+    EventId:
+      Id: 2
+  Log:
+    Message: Request finished in 74.533ms 200 text/css
+    Properties:
+      ContentType: text/css
+      ElapsedMilliseconds: 74.533000000000001
+      StatusCode: 200
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000003
+      SpanId: '|3171297-47139405049770f0.'
+      RequestPath: /lib/bootstrap/dist/css/bootstrap.min.css
+      ParentId: ''
+      TraceId: 3171297-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/bootstrap/dist/css/bootstrap.min.css RequestId:0HLRJLTR0RQRD:00000003, SpanId:|3171297-47139405049770f0., TraceId:3171297-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM
+    Properties:
+      flags: END_STREAM
+      id: 7
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 0
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 9 with length 0 and flags END_STREAM
+    Properties:
+      flags: END_STREAM
+      id: 9
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 0
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Information
+    EventId:
+      Id: 2
+  Log:
+    Message: Request finished in 74.42450000000001ms 200 application/javascript
+    Properties:
+      ContentType: application/javascript
+      ElapsedMilliseconds: 74.424500000000009
+      StatusCode: 200
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000009
+      SpanId: '|3171299-47139405049770f0.'
+      RequestPath: /lib/bootstrap/dist/js/bootstrap.bundle.min.js
+      ParentId: ''
+      TraceId: 3171299-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/bootstrap/dist/js/bootstrap.bundle.min.js RequestId:0HLRJLTR0RQRD:00000009, SpanId:|3171299-47139405049770f0., TraceId:3171299-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Information
+    EventId:
+      Id: 2
+  Log:
+    Message: Request finished in 74.6025ms 200 application/javascript
+    Properties:
+      ContentType: application/javascript
+      ElapsedMilliseconds: 74.602500000000006
+      StatusCode: 200
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:00000007
+      SpanId: '|3171298-47139405049770f0.'
+      RequestPath: /lib/jquery/dist/jquery.min.js
+      ParentId: ''
+      TraceId: 3171298-47139405049770f0
+    Levels:
+    - 'RequestPath:/lib/jquery/dist/jquery.min.js RequestId:0HLRJLTR0RQRD:00000007, SpanId:|3171298-47139405049770f0., TraceId:3171298-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" received {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" received HEADERS frame for stream ID 13 with length 36 and flags END_STREAM, END_HEADERS, PRIORITY
+    Properties:
+      flags: END_STREAM, END_HEADERS, PRIORITY
+      id: 13
+      ConnectionId: 0HLRJLTR0RQRD
+      type: HEADERS
+      length: 36
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Information
+    EventId:
+      Id: 1
+  Log:
+    Message: 'Request starting HTTP/2 GET https://localhost:5001/Home/Privacy  '
+    Properties:
+      Scheme: https
+      ContentType: 
+      Method: GET
+      ContentLength: 
+      Path: /Home/Privacy
+      PathBase: ''
+      Protocol: HTTP/2
+      Host: localhost:5001
+      QueryString: ''
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ParentId: ''
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: AllHostsAllowed
+    OriginalFormat: All hosts are allowed.
+  Log:
+    Message: All hosts are allowed.
+    Properties: {}
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ParentId: ''
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+    LogLevel: Debug
+    EventId:
+      Id: 4
+      Name: FileTypeNotSupported
+    OriginalFormat: The request path {Path} does not match a supported file type
+  Log:
+    Message: The request path /Home/Privacy does not match a supported file type
+    Properties:
+      Path: /Home/Privacy
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ParentId: ''
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.Matching.DfaMatcher
+    LogLevel: Debug
+    EventId:
+      Id: 1001
+      Name: CandidatesFound
+    OriginalFormat: "{CandidateCount} candidate(s) found for the request path '{Path}'"
+  Log:
+    Message: 1 candidate(s) found for the request path '/Home/Privacy'
+    Properties:
+      Path: /Home/Privacy
+      CandidateCount: 1
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ParentId: ''
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.Matching.DfaMatcher
+    LogLevel: Debug
+    EventId:
+      Id: 1005
+      Name: CandiateValid
+    OriginalFormat: Endpoint '{Endpoint}' with route pattern '{RoutePattern}' is valid for the request path '{Path}'
+  Log:
+    Message: Endpoint 'ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)' with route pattern '{controller=Home}/{action=Index}/{id?}' is valid for the request path '/Home/Privacy'
+    Properties:
+      RoutePattern: '{controller=Home}/{action=Index}/{id?}'
+      Path: /Home/Privacy
+      Endpoint: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ParentId: ''
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: MatchSuccess
+    OriginalFormat: Request matched endpoint '{EndpointName}'
+  Log:
+    Message: Request matched endpoint 'ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)'
+    Properties:
+      EndpointName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ParentId: ''
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.EndpointMiddleware
+    LogLevel: Information
+    EventId:
+      Id: 0
+      Name: ExecutingEndpoint
+    OriginalFormat: Executing endpoint '{EndpointName}'
+  Log:
+    Message: Executing endpoint 'ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)'
+    Properties:
+      EndpointName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ParentId: ''
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Information
+    EventId:
+      Id: 3
+      Name: ControllerActionExecuting
+    OriginalFormat: Route matched with {RouteData}. Executing controller action with signature {MethodInfo} on controller {Controller} ({AssemblyName}).
+  Log:
+    Message: Route matched with {action = "Privacy", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Privacy() on controller ExampleWebApplication.Controllers.HomeController (ExampleWebApplication).
+    Properties:
+      RouteData: '{action = "Privacy", controller = "Home"}'
+      MethodInfo: Microsoft.AspNetCore.Mvc.IActionResult Privacy()
+      Controller: ExampleWebApplication.Controllers.HomeController
+      AssemblyName: ExampleWebApplication
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: FilterExecutionPlan
+    OriginalFormat: 'Execution plan of {FilterType} filters (in the following order): {Filters}'
+  Log:
+    Message: 'Execution plan of authorization filters (in the following order): None'
+    Properties:
+      FilterType: authorization
+      Filters: System.String[]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: FilterExecutionPlan
+    OriginalFormat: 'Execution plan of {FilterType} filters (in the following order): {Filters}'
+  Log:
+    Message: 'Execution plan of resource filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter'
+    Properties:
+      FilterType: resource
+      Filters: System.String[]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: FilterExecutionPlan
+    OriginalFormat: 'Execution plan of {FilterType} filters (in the following order): {Filters}'
+  Log:
+    Message: 'Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter (Order: -2147483648), Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)'
+    Properties:
+      FilterType: action
+      Filters: System.String[]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: FilterExecutionPlan
+    OriginalFormat: 'Execution plan of {FilterType} filters (in the following order): {Filters}'
+  Log:
+    Message: 'Execution plan of exception filters (in the following order): None'
+    Properties:
+      FilterType: exception
+      Filters: System.String[]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: FilterExecutionPlan
+    OriginalFormat: 'Execution plan of {FilterType} filters (in the following order): {Filters}'
+  Log:
+    Message: 'Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter'
+    Properties:
+      FilterType: result
+      Filters: System.String[]
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: BeforeExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: Before executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Resource Filter: Before executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.'
+    Properties:
+      FilterType: Resource Filter
+      Method: OnResourceExecuting
+      Filter: Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 3
+      Name: AfterExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: After executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Resource Filter: After executing OnResourceExecuting on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.'
+    Properties:
+      FilterType: Resource Filter
+      Method: OnResourceExecuting
+      Filter: Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Debug
+    EventId:
+      Id: 1
+      Name: ControllerFactoryExecuting
+    OriginalFormat: Executing controller factory for controller {Controller} ({AssemblyName})
+  Log:
+    Message: Executing controller factory for controller ExampleWebApplication.Controllers.HomeController (ExampleWebApplication)
+    Properties:
+      Controller: ExampleWebApplication.Controllers.HomeController
+      AssemblyName: ExampleWebApplication
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Debug
+    EventId:
+      Id: 2
+      Name: ControllerFactoryExecuted
+    OriginalFormat: Executed controller factory for controller {Controller} ({AssemblyName})
+  Log:
+    Message: Executed controller factory for controller ExampleWebApplication.Controllers.HomeController (ExampleWebApplication)
+    Properties:
+      Controller: ExampleWebApplication.Controllers.HomeController
+      AssemblyName: ExampleWebApplication
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: BeforeExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: Before executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Action Filter: Before executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.'
+    Properties:
+      FilterType: Action Filter
+      Method: OnActionExecutionAsync
+      Filter: Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: BeforeExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: Before executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.'
+    Properties:
+      FilterType: Action Filter
+      Method: OnActionExecuting
+      Filter: Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 3
+      Name: AfterExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: After executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.'
+    Properties:
+      FilterType: Action Filter
+      Method: OnActionExecuting
+      Filter: Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Information
+    EventId:
+      Id: 1
+      Name: ActionMethodExecuting
+    OriginalFormat: 'Executing action method {ActionName} - Validation state: {ValidationState}'
+  Log:
+    Message: 'Executing action method ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication) - Validation state: Valid'
+    Properties:
+      ValidationState: Valid
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: BeforeExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: Before executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.'
+    Properties:
+      FilterType: Action Filter
+      Method: OnActionExecuted
+      Filter: Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 3
+      Name: AfterExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: After executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.'
+    Properties:
+      FilterType: Action Filter
+      Method: OnActionExecuted
+      Filter: Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 3
+      Name: AfterExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: After executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Action Filter: After executing OnActionExecutionAsync on filter Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter.'
+    Properties:
+      FilterType: Action Filter
+      Method: OnActionExecutionAsync
+      Filter: Microsoft.AspNetCore.Mvc.Filters.ControllerActionFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 2
+      Name: BeforeExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: Before executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Resource Filter: Before executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.'
+    Properties:
+      FilterType: Resource Filter
+      Method: OnResourceExecuted
+      Filter: Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Trace
+    EventId:
+      Id: 3
+      Name: AfterExecutingMethodOnFilter
+    OriginalFormat: '{FilterType}: After executing {Method} on filter {Filter}.'
+  Log:
+    Message: 'Resource Filter: After executing OnResourceExecuted on filter Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter.'
+    Properties:
+      FilterType: Resource Filter
+      Method: OnResourceExecuted
+      Filter: Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+    LogLevel: Information
+    EventId:
+      Id: 2
+      Name: ActionExecuted
+    OriginalFormat: Executed action {ActionName} in {ElapsedMilliseconds}ms
+  Log:
+    Message: Executed action ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication) in 4.2934ms
+    Properties:
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ElapsedMilliseconds: 4.2934000000000001
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ActionName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+      ParentId: ''
+      ActionId: cf38daf4-9c60-4e16-b913-96bd8a5065f0
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+    - ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Routing.EndpointMiddleware
+    LogLevel: Information
+    EventId:
+      Id: 1
+      Name: ExecutedEndpoint
+    OriginalFormat: Executed endpoint '{EndpointName}'
+  Log:
+    Message: Executed endpoint 'ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)'
+    Properties:
+      EndpointName: ExampleWebApplication.Controllers.HomeController.Privacy (ExampleWebApplication)
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ParentId: ''
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+    LogLevel: Error
+    EventId:
+      Id: 1
+      Name: UnhandledException
+    OriginalFormat: An unhandled exception has occurred while executing the request.
+  Log:
+    Message: An unhandled exception has occurred while executing the request.
+    Properties: {}
+    Exception:
+    - Type: System.ApplicationException
+      Message: Unable to show privacy
+      Stack: >2-
+           at ExampleWebApplication.Controllers.HomeController.Privacy() in C:\Users\Administrator\projects\github.com\lodejard\watch-logging\src\ExampleWebApplication\Controllers\HomeController.cs:line 35
+           at lambda_method(Closure , Object , Object[] )
+           at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+           at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+           at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+           at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+           at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+           at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+           at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+        --- End of stack trace from previous location where exception was thrown ---
+           at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+           at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+           at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+           at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+        --- End of stack trace from previous location where exception was thrown ---
+           at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+           at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+           at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+           at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+    - Type: System.IO.FileNotFoundException
+      Message: Could not find file 'c:\autoexec.bat'.
+      Stack: >2-
+           at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+           at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+           at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+           at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+           at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+           at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+           at System.IO.File.ReadAllText(String path)
+           at ExampleWebApplication.Controllers.HomeController.Privacy() in C:\Users\Administrator\projects\github.com\lodejard\watch-logging\src\ExampleWebApplication\Controllers\HomeController.cs:line 30
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ParentId: ''
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending HEADERS frame for stream ID 13 with length 92 and flags END_HEADERS
+    Properties:
+      flags: END_HEADERS
+      id: 13
+      ConnectionId: 0HLRJLTR0RQRD
+      type: HEADERS
+      length: 92
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ParentId: ''
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 13 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 13
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 13 with length 16384 and flags NONE
+    Properties:
+      flags: NONE
+      id: 13
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 16384
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 13 with length 1789 and flags NONE
+    Properties:
+      flags: NONE
+      id: 13
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 1789
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending DATA frame for stream ID 13 with length 0 and flags END_STREAM
+    Properties:
+      flags: END_STREAM
+      id: 13
+      ConnectionId: 0HLRJLTR0RQRD
+      type: DATA
+      length: 0
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Hosting.Diagnostics
+    LogLevel: Information
+    EventId:
+      Id: 2
+  Log:
+    Message: Request finished in 89.9377ms 500 text/html; charset=utf-8
+    Properties:
+      ContentType: text/html; charset=utf-8
+      ElapsedMilliseconds: 89.937700000000007
+      StatusCode: 500
+  Scope:
+    Properties:
+      RequestId: 0HLRJLTR0RQRD:0000000D
+      SpanId: '|317129b-47139405049770f0.'
+      RequestPath: /Home/Privacy
+      ParentId: ''
+      TraceId: 317129b-47139405049770f0
+    Levels:
+    - 'RequestPath:/Home/Privacy RequestId:0HLRJLTR0RQRD:0000000D, SpanId:|317129b-47139405049770f0., TraceId:317129b-47139405049770f0, ParentId:'
+- LogType:
+    CategoryName: Microsoft.Hosting.Lifetime
+    LogLevel: Information
+    EventId:
+      Id: 0
+    OriginalFormat: Application is shutting down...
+  Log:
+    Message: Application is shutting down...
+    Properties: {}
+- LogType:
+    CategoryName: Microsoft.Extensions.Hosting.Internal.Host
+    LogLevel: Debug
+    EventId:
+      Id: 3
+    OriginalFormat: Hosting stopping
+  Log:
+    Message: Hosting stopping
+    Properties: {}
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Debug
+    EventId:
+      Id: 36
+      Name: Http2ConnectionClosing
+    OriginalFormat: Connection id "{ConnectionId}" is closing.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" is closing.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Debug
+    EventId:
+      Id: 36
+      Name: Http2ConnectionClosed
+    OriginalFormat: Connection id "{ConnectionId}" is closed. The last processed stream ID was {HighestOpenedStreamId}.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" is closed. The last processed stream ID was 13.
+    Properties:
+      HighestOpenedStreamId: 13
+      ConnectionId: 0HLRJLTR0RQRD
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Trace
+    EventId:
+      Id: 37
+      Name: Http2FrameReceived
+    OriginalFormat: Connection id "{ConnectionId}" sending {type} frame for stream ID {id} with length {length} and flags {flags}
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" sending GOAWAY frame for stream ID 0 with length 8 and flags 0x0
+    Properties:
+      flags: 0x0
+      id: 0
+      ConnectionId: 0HLRJLTR0RQRD
+      type: GOAWAY
+      length: 8
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+    LogLevel: Debug
+    EventId:
+      Id: 6
+      Name: ConnectionReadFin
+    OriginalFormat: Connection id "{ConnectionId}" received FIN.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" received FIN.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets
+    LogLevel: Debug
+    EventId:
+      Id: 7
+      Name: ConnectionWriteFin
+    OriginalFormat: 'Connection id "{ConnectionId}" sending FIN because: "{Reason}"'
+  Log:
+    Message: 'Connection id "0HLRJLTR0RQRD" sending FIN because: "The client closed the connection."'
+    Properties:
+      Reason: The client closed the connection.
+      ConnectionId: 0HLRJLTR0RQRD
+  Scope:
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+    Levels:
+    - ConnectionId:0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.AspNetCore.Server.Kestrel
+    LogLevel: Debug
+    EventId:
+      Id: 2
+      Name: ConnectionStop
+    OriginalFormat: Connection id "{ConnectionId}" stopped.
+  Log:
+    Message: Connection id "0HLRJLTR0RQRD" stopped.
+    Properties:
+      ConnectionId: 0HLRJLTR0RQRD
+- LogType:
+    CategoryName: Microsoft.Extensions.Hosting.Internal.Host
+    LogLevel: Debug
+    EventId:
+      Id: 4
+    OriginalFormat: Hosting stopped
+  Log:
+    Message: Hosting stopped
+    Properties: {}
