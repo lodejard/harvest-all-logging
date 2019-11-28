@@ -29,21 +29,6 @@ namespace WheresLou.Logging.Watcher
 
         public bool IsEnabled(LogLevel logLevel) => true;
 
-        public static Func<T, R> GetFieldAccessor<T, R>(string fieldName)
-        {
-            ParameterExpression param =
-            Expression.Parameter(typeof(T), "arg");
-
-            MemberExpression member =
-            Expression.Field(param, fieldName);
-
-            LambdaExpression lambda =
-            Expression.Lambda(typeof(Func<T, R>), member, param);
-
-            Func<T, R> compiled = (Func<T, R>)lambda.Compile();
-            return compiled;
-        }
-
         public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception, Func<TState, Exception, string> formatter)
         {
             var stateProperties = state as IReadOnlyList<KeyValuePair<string, object>>;
@@ -130,11 +115,6 @@ namespace WheresLou.Logging.Watcher
             }
 
             return false;
-        }
-
-        private static (LogLevel logLevel, EventId eventId) NewMethod(LogLevel logLevel, EventId eventId)
-        {
-            return (logLevel, eventId);
         }
     }
 }
